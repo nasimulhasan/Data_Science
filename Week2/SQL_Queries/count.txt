@@ -1,0 +1,7 @@
+15
+
+==================================
+ELECT docid
+FROM frequency
+WHERE term = 'parliament'
+====================================

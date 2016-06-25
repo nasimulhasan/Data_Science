@@ -1,0 +1,10 @@
+19
+
+===========================
+SELECT Frequency.docid, Transpose
+.docid, sum(Frequency.count * Transpose.count)
+FROM Frequency, Transpose
+WHERE Frequency.term = Transpose.term
+    AND Frequency.docid in ('10080_txt_crude', '17035_txt_earn')
+GROUP BY Frequency.docid, Transpose.docid;
+===============================
